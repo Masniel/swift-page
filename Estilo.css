@@ -1,0 +1,150 @@
+body {
+    background: linear-gradient(135deg, #ffe4ec, #e0f2fe);
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.contenedor {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+h1 {
+    color: #a855f7;
+    text-align: center;
+}
+
+nav {
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #3b0764;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+img {
+    max-width: 30%;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+footer {
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    margin-top: 30px;
+}
+
+#frase {
+    background-color: #fbe4ff;
+    padding: 25px;
+    border-radius: 20px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.frase {
+    font-size: 24px;
+    color: #6b21a8;
+    font-weight: bold;
+    font-style: italic;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.sticky-nav {
+    position: sticky;
+    top: 0;
+    background-color: #f0f0ff;
+    padding: 10px 0;
+    text-align: center;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-bottom: 1px solid #ddd;
+}
+
+.sticky-nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #4c1d95;
+    font-weight: bold;
+    transition: color 0.3 ease;
+}
+
+.sticky-nav a:hover  {
+    color: #7c3aed;
+}
+
+.play-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #8b5cf6;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+transition: background-color 0.3 ease;
+}
+
+.play-button:hover {
+    background-color: #6d28d9;
+}
+
+.albumes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+.albumes img {
+    width: 150px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3, box-shadow 0.3;
+}
+
+.albumes img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(255,0,255,0.4);
+}
+
+#mensaje-album {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.contenedor {
+    transition: background 0.5s ease, color 0.5s  ease;
+}
