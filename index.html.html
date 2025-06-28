@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Taylor Swift Fan Page</title>
+    <link rel="stylesheet" href="Estilo.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="contenedor">
+      <h1>Taylor Swift Fan Page</h1>
+
+      <nav>
+        <a href="#bio">Biografía</a>
+        <a href="#albums">Álbumes</a>
+        <a href="#foto">Imagen</a>
+        <a href="#frase">Frase Icónica</a>
+        <a href="#album-favorito">Mi Álbum Favorito</a>
+      </nav>
+
+      <section id="bio">
+        <h2>Biografía</h2>
+        <p>
+          Taylor Alisson Swift, mejor conocida como 'Taylor Swift' es una cantautora de 34 años de edad que nació el 13 de Diciembre de 1989 en Pensylvania, Estados Unidos
+        </p>
+      </section>
+
+      <section id="albums">
+        <h2>Álbumes hasta el momento</h2>
+        <ul>
+          <li>Taylor Swift (Debut)</li>
+          <li>Fearless</li>
+          <li>Speak Now</li>
+          <li>Red</li>
+          <li>1989</li>
+          <li>Reputation</li>
+          <li>Lover</li>
+          <li>Folklore</li>
+          <li>Evermore</li>
+          <li>Midnights</li>
+          <li>The Tortured Poets Department</li>
+        </ul>
+      </section>
+
+      <section id="foto">
+        <h2>Teilor cantando joder</h2>
+        <img
+          src="https://media.vogue.mx/photos/66c0c120033647576b871851/2:3/w_2560%2Cc_limit/IMG_0664.jpeg"
+          alt="Taylor en Midnight Rain Joder"
+        />
+      </section>
+
+      <section id="frase">
+        <h2>Frase Icónica</h2>
+        <p class="frase">Hi, I'm Taylor</p>
+      </section>
+
+      <section id="album-favorito">
+        <h2>¿Cuál es tu álbum favorito?</h2>
+        <div class="albumes">
+          <!-- 11 álbumes -->
+          <img src="https://upload.wikimedia.org/wikipedia/en/1/1f/Taylor_Swift_-_Taylor_Swift.png" alt="Taylor Swift" onclick="elegirAlbum('Taylor Swift')" />
+          <img src="https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/c3/d0/1c/c3d01c88-73e7-187e-fd62-e1744de979a6/21UMGIM09915.rgb.jpg/600x600bf-60.jpg" alt="Fearless" onclick="elegirAlbum('Fearless')" />
+          <img src="https://m.media-amazon.com/images/I/71QgmF3cnEL._UF1000,1000_QL80_.jpg" alt="Speak Now" onclick="elegirAlbum('Speak Now')" />
+          <img src="https://m.media-amazon.com/images/I/71ORmo0+Z0L.jpg" alt="Red" onclick="elegirAlbum('Red')" />
+          <img src="https://m.media-amazon.com/images/I/81JNBy4njYL._UF1000,1000_QL80_.jpg" alt="1989" onclick="elegirAlbum('1989')" />
+          <img src="https://upload.wikimedia.org/wikipedia/en/f/f2/Taylor_Swift_-_Reputation.png" alt="Reputation" onclick="elegirAlbum('Reputation')" />
+          <img src="https://m.media-amazon.com/images/I/71VO2Mo3H0L._UF1000,1000_QL80_.jpg" alt="Lover" onclick="elegirAlbum('Lover')" />
+          <img src="https://upload.wikimedia.org/wikipedia/en/f/f8/Taylor_Swift_-_Folklore.png" alt="Folklore" onclick="elegirAlbum('Folklore')" />
+          <img src="https://i.scdn.co/image/ab67616d0000b27390fd9741e1838115cd90b3b6" alt="Evermore" onclick="elegirAlbum('Evermore')" />
+          <img src="https://i.scdn.co/image/ab67616d0000b273bb54dde68cd23e2a268ae0f5" alt="Midnights" onclick="elegirAlbum('Midnights')" />
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtswYTHEX9LWDPnSXKTNB1yevnagSjLFd9PQ&s" alt="TTPD" onclick="elegirAlbum('TTPD')" />
+        </div>
+        <p id="mensaje-album"></p>
+      </section>
+
+      <footer>
+        <p>Creado con amor por Joel alaberga</p>
+      </footer>
+    </div>
+
+    <script>
+      function elegirAlbum(nombre) {
+        const mensaje = document.getElementById("mensaje-album");
+        const contenedor = document.querySelector(".contenedor");
+        
+        switch (nombre) {
+          case "Taylor Swift":
+            mensaje.textContent = "Taylor fetus, funable, homoofobica y yorolejiju";
+            contenedor.style.background = "#63e25a";
+            break;
+          case "Fearless":
+            mensaje.textContent = "Un amor adolescente como el de Fearless, no pido mas";
+            contenedor.style.background = "#dee25a";
+            break;
+          case "Speak Now":
+            mensaje.textContent = "Gata rompehogares, misogina, vengativa y enojada...Fuck John";
+            contenedor.style.background = "#b25ae2";
+            break;
+          case "Red":
+            mensaje.textContent = "Yo se, tu sabes, todos lo sabemos, lo recordamos todo muy bien...";
+            contenedor.style.background = "#e25a5a";
+            break;
+          case "1989":
+            mensaje.textContent = "Joder amigo, biblia del pop, sacude eso apagado";
+            contenedor.style.background = "#5ae2ce";
+            contenedor.style.color = "black";
+            break;
+          case "Reputation":
+            mensaje.textContent = "Taylor hot y mira lo que me hiciste hacer...";
+            contenedor.style.background = "#2c2f2e";
+            contenedor.style.color = "white";
+            break;
+          case "Lover":
+            mensaje.textContent = "Muy amor amor amor, hay que casarnos con anillos de papel en este verano cruel";
+            contenedor.style.background = "#e25ab8";
+            break;
+          case "Folklore":
+            mensaje.textContent = "Yo siempre supe que la curva se corvirtio en un circulo, solo me queda... ser la bola";
+            contenedor.style.background = "#646464";
+            contenedor.style.color = "white";
+            break;
+          case "Evermore":
+            mensaje.textContent = "Ni recordaba este album wtf";
+            contenedor.style.background = "#4c361b";
+            break;
+          case "Midnights":
+            mensaje.textContent = "Las mediasnoches pegan diferente con lluvia";
+            contenedor.style.background = "#3c42bb";
+            break;
+          case "TTPD":
+            mensaje.textContent = "Critica y funa directa a la pepona, ahora sabemos que te tocabas pensando en el travieso taylor...";
+            contenedor.style.background = "#c7c8cb";
+            break;
+          default:
+            mensaje.textContent = "Álbum no reconocido.";
+        }
+      }
+    </script>
+  </body>
+</html>
